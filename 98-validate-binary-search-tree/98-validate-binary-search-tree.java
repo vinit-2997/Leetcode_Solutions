@@ -29,7 +29,7 @@ class Solution {
         // if(root.left == null && root.right == null)
         //     return true;
         
-        else if((left!=null && root.val<=left) || (right!=null && root.val>=right))
+        if((left!=null && root.val<=left) || (right!=null && root.val>=right))
             return false;
         
         // boolean am = true;
@@ -48,7 +48,6 @@ class Solution {
 //         }
         
         // if(left!=null && right!=null )
-        else
         return helper(root.left, left, root.val) && helper(root.right, root.val, right);
     }
 }
