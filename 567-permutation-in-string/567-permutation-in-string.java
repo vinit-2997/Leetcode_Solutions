@@ -23,8 +23,8 @@ class Solution {
 
         }
          
-            if(h1.equals(h2))
-                return true;
+        if(h1.equals(h2))
+            return true;
         
         for(int i = k; i<s2.length(); i++)
         {
