@@ -18,9 +18,8 @@ class Solution {
 
                 while(left<=i && sum>=target)
                 {
-                    minLen = Math.min(minLen, i - left+1);
                     sum-=nums[left];
-                    
+                    minLen = Math.min(minLen, i - left+1);
                     left++;
                 }
             
